@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CollapsedTouristView: View {
+struct CellCollapsedTouristView: View {
     @EnvironmentObject var viewModel: ViewModel
     let index: Int
     
@@ -25,9 +25,9 @@ struct CollapsedTouristView: View {
     }
 }
 
-struct CollapsedTouristView_Previews: PreviewProvider {
+struct CellCollapsedTouristView_Previews: PreviewProvider {
     static var previews: some View {
-        CollapsedTouristView(index: 0)
+        CellCollapsedTouristView(index: 0)
             .environmentObject(ViewModel())
     }
 }

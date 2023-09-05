@@ -86,35 +86,9 @@ struct HotelView: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: 25))
                             .padding(EdgeInsets(top: 10, leading: 0, bottom: 1, trailing: 0))
-                       
-                        // peculiarities
-                        ////////////////////////
-                        HStack {
-                            Text(viewModel.hotel?.about_the_hotel.peculiarities[0] ?? "")
-                                .foregroundColor(.gray)
-                                .background(Color("backgroundColor"))
-                                .cornerRadius(20)
-                                .lineLimit(1)
-                            Text(viewModel.hotel?.about_the_hotel.peculiarities[1] ?? "")
-                                .foregroundColor(.gray)
-                                .background(Color("backgroundColor"))
-                                .cornerRadius(20)
-                                .lineLimit(1)
-                        }.padding(EdgeInsets(top: 0, leading: 0, bottom: 3, trailing: 0))
                         
-                        HStack {
-                            Text(viewModel.hotel?.about_the_hotel.peculiarities[2] ?? "")
-                                .foregroundColor(.gray)
-                                .background(Color("backgroundColor"))
-                                .cornerRadius(20)
-                                .lineLimit(1)
-                            Text(viewModel.hotel?.about_the_hotel.peculiarities[3] ?? "")
-                                .foregroundColor(.gray)
-                                .background(Color("backgroundColor"))
-                                .cornerRadius(20)
-                                .lineLimit(1)
-                        }.padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
-                        ////////////////////////
+                        // peculiarities
+                        GenerateChips(items: viewModel.hotel?.about_the_hotel.peculiarities ?? [""])
                         
                         // description
                         Text(viewModel.hotel?.about_the_hotel.description ?? "")

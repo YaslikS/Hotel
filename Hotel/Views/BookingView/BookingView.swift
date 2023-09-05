@@ -154,9 +154,9 @@ struct BookingView: View {
             Section {
                 ForEach(0...viewModel.tourists.count - 1, id: \.self) { index in
                     if viewModel.tourists[index] == false {
-                        CollapsedTouristView(index: index)
+                        CellCollapsedTouristView(index: index)
                     } else {
-                        FullTouristView(index: index)
+                        CellFullTouristView(index: index)
                     }
                 }
                 

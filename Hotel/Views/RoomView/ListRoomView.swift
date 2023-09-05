@@ -9,7 +9,7 @@ struct ListRoomView: View {
     var body: some View {
         ScrollView {
             ForEach(viewModel.hotelRoom?.rooms ?? [fakeRoom]) { hotelRoom in
-                RoomCellView(hotelRoom: hotelRoom)
+                CellRoomView(hotelRoom: hotelRoom)
             }
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
             .cornerRadius(10)

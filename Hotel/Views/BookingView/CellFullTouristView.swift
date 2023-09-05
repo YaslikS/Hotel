@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FullTouristView: View {
+struct CellFullTouristView: View {
     @EnvironmentObject var viewModel: ViewModel
     let index: Int
     
@@ -186,9 +186,9 @@ struct FullTouristView: View {
     }
 }
 
-struct FullTouristView_Previews: PreviewProvider {
+struct CellFullTouristView_Previews: PreviewProvider {
     static var previews: some View {
-        FullTouristView(index: 0)
+        CellFullTouristView(index: 0)
             .environmentObject(ViewModel())
     }
 }

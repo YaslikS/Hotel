@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RoomCellView: View {
+struct CellRoomView: View {
     @EnvironmentObject var viewModel: ViewModel
     @State private var indexPicture = 0
     let hotelRoom: HotelRoom
@@ -32,18 +32,7 @@ struct RoomCellView: View {
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             
             // peculiarities
-            HStack {
-                Text(hotelRoom.peculiarities[0])
-                    .foregroundColor(.gray)
-                    .background(Color("backgroundColor"))
-                    .cornerRadius(20)
-                    .lineLimit(1)
-                //                Text(viewModel.hotelRoom?.rooms[0].peculiarities[1] ?? "")
-                //                    .foregroundColor(.gray)
-                //                    .background(Color("backgroundColor"))
-                //                    .cornerRadius(20)
-                //                    .lineLimit(1)
-            }.padding(EdgeInsets(top: 1, leading: 10, bottom: 3, trailing: 10))
+            GenerateChips(items: hotelRoom.peculiarities)
             
             RoundedRectangle(cornerRadius: 5)
                 .fill(Color("lightBlue"))
@@ -94,9 +83,9 @@ struct RoomCellView: View {
     }
 }
 
-struct RoomCellView_Previews: PreviewProvider {
+struct CellRoomView_Previews: PreviewProvider {
     static var previews: some View {
-        RoomCellView(hotelRoom: HotelRoom(id: 0, name: "", price: 0, price_per: "", peculiarities: [""], image_urls: [""]))
+        CellRoomView(hotelRoom: HotelRoom(id: 0, name: "", price: 0, price_per: "", peculiarities: [""], image_urls: [""]))
             .environmentObject(ViewModel())
     }
 }
