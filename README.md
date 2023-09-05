@@ -31,3 +31,13 @@
 5.2. При нажатии на кнопку «Супер!» осуществляется переход на начальный экран – «Отель». Либо пользователь может вернуться назад на экран «Бронирование», нажав на кнопку назад в навигационной панели;
 5.3. Номер заказа каждый раз должен быть разным (можно поставить рандом).
 
+# Скриншоты результата:
+![HotelView](https://github.com/YaslikS/Hotel/assets/58375980/6b54115a-7360-408f-b06e-9c070a9a3073)
+![HotelView2](https://github.com/YaslikS/Hotel/assets/58375980/d541959d-23d0-406c-92ef-4849bf71fd76)
+![ListRoomView](https://github.com/YaslikS/Hotel/assets/58375980/5531a957-b940-41fa-b9a2-471c075b2759)
+![BookingView](https://github.com/YaslikS/Hotel/assets/58375980/3fd2d740-b00e-4fc7-9737-592914a09c54)
+![BookingView2](https://github.com/YaslikS/Hotel/assets/58375980/03218e78-a886-4933-9762-641c55b7fa47)
+![BookingViewFilled](https://github.com/YaslikS/Hotel/assets/58375980/e1229616-6902-43b9-91c8-1a68fa615b39)
+![BookingViewManyTourists](https://github.com/YaslikS/Hotel/assets/58375980/60187f71-f8a9-4b55-98d5-f685d6aaf448)
+![BookingViewManyTourists2](https://github.com/YaslikS/Hotel/assets/58375980/8b6e7bd8-f7b5-4fb9-b4ac-54b18624da14)
+![OrderPaidView](https://github.com/YaslikS/Hotel/assets/58375980/de3ca62f-610b-47f3-bd8f-b0677367fb9e)
