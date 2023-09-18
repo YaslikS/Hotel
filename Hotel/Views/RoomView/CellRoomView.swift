@@ -26,13 +26,14 @@ struct CellRoomView: View {
             
             Text(hotelRoom.name)
                 .lineLimit(3)
-                .foregroundColor(.black)
+                .foregroundColor(Color("blackWhiteText"))
                 .multilineTextAlignment(.leading)
                 .font(.system(size: 25))
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             
             // peculiarities
             GenerateChips(items: hotelRoom.peculiarities)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             
             RoundedRectangle(cornerRadius: 5)
                 .fill(Color("lightBlue"))
@@ -51,7 +52,7 @@ struct CellRoomView: View {
             HStack (alignment: .bottom) {
                 Text("от " + String(hotelRoom.price) + " ₽")
                     .lineLimit(3)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("blackWhiteText"))
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 30))
                     .bold()
@@ -78,7 +79,7 @@ struct CellRoomView: View {
             }
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
         }
-        .background(Color(.white))
+        .background(Color("blackWhite"))
         .cornerRadius(10)
     }
 }

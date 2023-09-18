@@ -114,8 +114,9 @@ struct BookingView: View {
                         
                         TextField("", text: $phoneBuyer)
                             .onChange(of: phoneBuyer) {
-                                phoneBuyer = $0.formatMobileNumber().number
-                                if $0.formatMobileNumber().count < 11 {
+                                print(String($0.count))
+                                phoneBuyer = formatMobileNumberNew(phoneNumber: $0, shouldRemoveLastDigit: $0.count == 0)
+                                if phoneBuyer.count < 11 {
                                     phoneFill = false
                                 } else {
                                     phoneFill = true

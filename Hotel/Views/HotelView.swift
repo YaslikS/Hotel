@@ -74,7 +74,7 @@ struct HotelView: View {
                                 .offset(y: -4)
                         }.padding(EdgeInsets(top: 1, leading: 0, bottom: 15, trailing: 0))
                     }
-                    .background(Color(.white))
+                    .background(Color("blackWhite"))
                     .cornerRadius(10)
                 }
                 
@@ -125,7 +125,7 @@ struct HotelView: View {
                         .cornerRadius(10)
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                     }
-                    .background(Color(.white))
+                    Color("blackWhite")
                     .cornerRadius(10)
                 }
             }

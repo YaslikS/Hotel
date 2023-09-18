@@ -35,7 +35,7 @@
 		C541436A2AA1EA0A00BB554C /* Hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C541436D2AA1EA0A00BB554C /* HotelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelApp.swift; sourceTree = "<group>"; };
 		C541436F2AA1EA0A00BB554C /* HotelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelView.swift; sourceTree = "<group>"; };
-		C54143712AA1EA0B00BB554C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54143712AA1EA0B00BB554C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Hotel/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		C54143742AA1EA0B00BB554C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C54143802AA1ECC200BB554C /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		C54143822AA1EDE600BB554C /* HotelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelManager.swift; sourceTree = "<group>"; };
